@@ -1,6 +1,6 @@
 <form action='https://forms.zohopublic.com/beckleyretreats/form/BeckleyRetreatsInterestForm1/formperma/nLCcF4G2F3kKzIgRDspvTd2Ns36_j_Mg02xyiBX84wc/htmlRecords/submit'
           name='form' method='POST'
-          onSubmit='javascript:document.charset="UTF-8";  let phoneNumber = $("#international_PhoneNumber_countrycode").val();    $("#international_PhoneNumber_countrycode").val(phoneNumber.replace(/[()+ ]/g, "")); return  zf_ValidateAndSubmit();'
+          onSubmit='javascript:document.charset="UTF-8";  let phoneNumber = $("#international_PhoneNumber_countrycode").val();    $("#international_PhoneNumber_countrycode").val(phoneNumber.replace(/[()+ ]/g, "")); let fullName = $("#oz_firstName").val() + " " + $("#oz_lastName").val(); $("#oz_FullName").val(fullName);  return  zf_ValidateAndSubmit();'
           accept-charset='UTF-8' enctype='multipart/form-data' id='form'><input type="hidden" name="zf_referrer_name"
                                                                                 value="">
         <!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
@@ -35,12 +35,14 @@
                     </label>
                         <div class="zf-tempContDiv zf-twoType">
                             <div class="zf-nameWrapper">
-                                    <span> <input type="text" maxlength="255" name="Name_First" fieldType=7
+                                    <span> <input type="text" id="oz_firstName" maxlength="255" name="Name_First"
+                                                  fieldType=7
                                                   placeholder=""/> <label>First Name</label>
  </span>
                                 </span>
                                 </span>
-                                <span> <input type="text" maxlength="255" name="Name_Last" fieldType=7 placeholder=""/> <label>Last Name</label>
+                                <span> <input type="text" id="oz_lastName" maxlength="255" name="Name_Last" fieldType=7
+                                              placeholder=""/> <label>Last Name</label>
  </span>
                                 </span>
                                 </span>
@@ -56,7 +58,9 @@
                     <li class="zf-tempFrmWrapper zf-small" hidden><label class="zf-labelName">
                         Full Name
                     </label>
-                        <div class="zf-tempContDiv"><span> <input type="text" name="SingleLine3" checktype="c1" value="" maxlength="255" fieldType=1 placeholder=""/></span>
+                        <div class="zf-tempContDiv"><span> <input type="text" id="oz_FullName" name="SingleLine3"
+                                                                  checktype="c1" value="" maxlength="255" fieldType=1
+                                                                  placeholder=""/></span>
                             <p id="SingleLine3_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
                         </div>
                         <div class="zf-clearBoth"></div>

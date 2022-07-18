@@ -1,6 +1,6 @@
 <form action='https://forms.zohopublic.com/beckleyretreats/form/BeckleyRetreatsInterestForm1/formperma/nLCcF4G2F3kKzIgRDspvTd2Ns36_j_Mg02xyiBX84wc/htmlRecords/submit'
           name='form' method='POST'
-          onSubmit='javascript:document.charset="UTF-8";$("#international_PhoneNumber_countrycode").val(iti.getNumber(intlTelInputUtils.numberFormat.E164).replace("+", "")); return zf_ValidateAndSubmit();'
+          onSubmit='javascript:document.charset="UTF-8";  let phoneNumber = $("#international_PhoneNumber_countrycode").val();    $("#international_PhoneNumber_countrycode").val(phoneNumber.replace(/[()+ ]/g, "")); return  zf_ValidateAndSubmit();'
           accept-charset='UTF-8' enctype='multipart/form-data' id='form'><input type="hidden" name="zf_referrer_name"
                                                                                 value="">
         <!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->

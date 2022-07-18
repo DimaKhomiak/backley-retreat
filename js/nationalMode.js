@@ -24,7 +24,7 @@ async function initializeItiPlaceholder() {
             returnData = "+" + selectedCountryData.dialCode + " " + selectedCountryPlaceholder;
             return returnData;
         },
-        utilsScript: "./js/utils.js?1638200991544", // just for formatting/placeholders etc
+        utilsScript: "https://dimakhomiak.github.io/backley-retreat/js/utils.js?1638200991544", // just for formatting/placeholders etc
     });
 }
 

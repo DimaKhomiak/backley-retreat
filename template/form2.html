@@ -27,17 +27,42 @@
                     </label>
                         <div class="zf-clearBoth"></div>
                     </li><!---------Description Ends Here---------->
-                    <!---------Single Line Starts Here---------->
-                    <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">
-                        Your Full Name
+
+                    <!---------Name Starts Here---------->
+                    <li class="zf-tempFrmWrapper zf-name zf-namemedium"><label class="zf-labelName">
+                        Name
                         <em class="zf-important">*</em>
                     </label>
-                        <div class="zf-tempContDiv"><span> <input type="text" name="SingleLine6" checktype="c1" value=""
-                                                                  maxlength="255" fieldType=1 placeholder=""/></span>
-                            <p id="SingleLine6_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+                        <div class="zf-tempContDiv zf-twoType">
+                            <div class="zf-nameWrapper">
+                                    <span> <input type="text" maxlength="255" name="Name_First" fieldType=7
+                                                  placeholder=""/> <label>First Name</label>
+ </span>
+                                </span>
+                                </span>
+                                <span> <input type="text" maxlength="255" name="Name_Last" fieldType=7 placeholder=""/> <label>Last Name</label>
+ </span>
+                                </span>
+                                </span>
+                                <div class="zf-clearBoth"></div>
+                            </div>
+                            <p id="Name_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
                         </div>
                         <div class="zf-clearBoth"></div>
-                    </li><!---------Single Line Ends Here---------->
+                    </li>
+                    <!---------Name Ends Here---------->
+
+                    <!---------Single Line Starts Here---------->
+                    <li class="zf-tempFrmWrapper zf-small" hidden><label class="zf-labelName">
+                        Full Name
+                    </label>
+                        <div class="zf-tempContDiv"><span> <input type="text" name="SingleLine3" checktype="c1" value="" maxlength="255" fieldType=1 placeholder=""/></span>
+                            <p id="SingleLine3_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+                        </div>
+                        <div class="zf-clearBoth"></div>
+                    </li>
+                    <!---------Single Line Ends Here---------->
+
                     <!---------Email Starts Here---------->
                     <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">
                         Email
@@ -55,7 +80,7 @@
                         <em class="zf-important">*</em>
                     </label>
                         <div class="zf-tempContDiv zf-phonefld">
-<!--                                                        <div class="zf-phwrapper zf-phNumber">-->
+                            <!--                                                        <div class="zf-phwrapper zf-phNumber">-->
                             <div style="width: 50%;">
 <span>
     <input type="text" compname="PhoneNumber" name="PhoneNumber_countrycode" maxlength="20" checktype="c7" value=""
@@ -70,21 +95,6 @@
                         </div>
                         <div class="zf-clearBoth"></div>
                     </li><!---------Phone Ends Here---------->
-                    <!---------Dropdown Starts Here---------->
-                    <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">
-                        Gender
-                        <em class="zf-important">*</em>
-                    </label>
-                        <div class="zf-tempContDiv"><select class="zf-form-sBox" name="Dropdown" checktype="c1">
-                            <option selected="true" value="-Select-">-Select-</option>
-                            <option value="Male">Male</option>
-                            <option value="Female">Female</option>
-                            <option value="Other">Other</option>
-                        </select>
-                            <p id="Dropdown_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
-                        </div>
-                        <div class="zf-clearBoth"></div>
-                    </li><!---------Dropdown Ends Here---------->
                     <!---------Checkbox Starts Here---------->
                     <li class="zf-checkbox zf-tempFrmWrapper zf-oneColumns"><label class="zf-labelName">Which 2022
                         retreat are you interested in participating in?
@@ -137,26 +147,7 @@
                         </div>
                         <div class="zf-clearBoth"></div>
                     </li><!---------Single Line Ends Here---------->
-                    <!---------Single Line Starts Here---------->
-                    <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">
-                        If you have a promo code, please enter it here.
-                    </label>
-                        <div class="zf-tempContDiv"><span> <input type="text" name="SingleLine3" checktype="c1" value=""
-                                                                  maxlength="255" fieldType=1 placeholder=""/></span>
-                            <p id="SingleLine3_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
-                        </div>
-                        <div class="zf-clearBoth"></div>
-                    </li><!---------Single Line Ends Here---------->
-                    <!---------Single Line Starts Here---------->
-                    <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">
-                        Anything else you'd like to ask us or know?
-                    </label>
-                        <div class="zf-tempContDiv"><span> <input type="text" name="SingleLine4" checktype="c1" value=""
-                                                                  maxlength="255" fieldType=1 placeholder=""/></span>
-                            <p id="SingleLine4_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
-                        </div>
-                        <div class="zf-clearBoth"></div>
-                    </li><!---------Single Line Ends Here---------->
+
                     <!---------Single Line Starts Here---------->
                     <li class="zf-tempFrmWrapper zf-small" hidden><label class="zf-labelName">
                         Status
